@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:text="Nom &amp; prenom" android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+        <EditText
+            android:id="@+id/nom"
+            android:hint="Ex : Harry Potter"
+            android:inputType="textPersonName"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+
+        <TextView android:text="Email" android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Ex : tester@test.com"
+            android:inputType="textEmailAddress"/>
+
+
+        <TextView android:text="Téléphone" android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <EditText
+            android:id="@+id/phone"
+            android:hint="Ex : +2126 12 34 56 78"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView android:text="Adresse" android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/adresse"
+            android:hint="Ex : 12, Hay Bernoussi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPostalAddress"/>
+
+        <TextView android:text="Ville" android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+            <EditText
+                android:id="@+id/ville"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Ex : New Tokyo"
+                android:inputType="textCapWords"/>
+
+        <Button
+            android:id="@+id/btnEnvoyer"
+            android:text="Envoyer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>
